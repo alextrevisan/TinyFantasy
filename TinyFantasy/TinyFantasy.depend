@@ -1,0 +1,90 @@
+# depslib dependency file v1.0
+1442724688 source:d:\arduino\projects\tinyfantasy\pcd8544_spi_fb.cpp
+	"PCD8544_SPI.h"
+	<SPI.h>
+
+1442803798 d:\arduino\projects\tinyfantasy\pcd8544_spi.h
+	"Arduino.h"
+
+1371033101 d:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\arduino.h
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<avr/pgmspace.h>
+	<avr/io.h>
+	<avr/interrupt.h>
+	"binary.h"
+	"WCharacter.h"
+	"WString.h"
+	"HardwareSerial.h"
+	"pins_arduino.h"
+
+1362986950 d:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\binary.h
+
+1362986950 d:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\wcharacter.h
+	<ctype.h>
+
+1371033133 d:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\wstring.h
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<avr/pgmspace.h>
+
+1362986950 d:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\hardwareserial.h
+	<inttypes.h>
+	"Stream.h"
+	"USBAPI.h"
+
+1371032829 d:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\stream.h
+	<inttypes.h>
+	"Print.h"
+
+1362986950 d:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\print.h
+	<inttypes.h>
+	<stdio.h>
+	"WString.h"
+	"Printable.h"
+
+1362986950 d:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\printable.h
+	<new.h>
+
+1362986950 d:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\new.h
+	<stdlib.h>
+
+1362986950 d:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\usbapi.h
+
+1362986950 d:\arduino\codeblocks\arduino\hardware\arduino\variants\standard\pins_arduino.h
+	<avr/pgmspace.h>
+
+1443140175 source:d:\arduino\projects\tinyfantasy\tinyfantasy.ino
+	<Arduino.h>
+	<SPI.h>
+	<SD.h>
+	"PCD8544_SPI.h"
+	"Effects.h"
+	"Player.h"
+	"MapManager.h"
+
+1443139710 source:d:\arduino\projects\tinyfantasy\effects.cpp
+	"Effects.h"
+
+1443139708 d:\arduino\projects\tinyfantasy\effects.h
+	"PCD8544_SPI.h"
+
+1443140913 source:d:\arduino\projects\tinyfantasy\player.cpp
+	"Player.h"
+	<SD.h>
+
+1443139878 d:\arduino\projects\tinyfantasy\player.h
+	"PCD8544_SPI.h"
+
+1443140625 source:d:\arduino\projects\tinyfantasy\mapmanager.cpp
+	"MapManager.h"
+	<SD.h>
+
+1443140119 d:\arduino\projects\tinyfantasy\mapmanager.h
+	"PCD8544_SPI.h"
+
+1362986950 d:\arduino\codeblocks\arduino\hardware\arduino\variants\eightanaloginputs\pins_arduino.h
+	"../standard/pins_arduino.h"
+
