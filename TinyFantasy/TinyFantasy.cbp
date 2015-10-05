@@ -442,6 +442,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/standard" />
+					<Add directory="SdFat" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -653,12 +654,36 @@
 		</Compiler>
 		<Unit filename="Effects.cpp" />
 		<Unit filename="Effects.h" />
+		<Unit filename="Input.cpp" />
+		<Unit filename="Input.h" />
 		<Unit filename="MapManager.cpp" />
 		<Unit filename="MapManager.h" />
+		<Unit filename="Menu.cpp" />
+		<Unit filename="Menu.h" />
 		<Unit filename="PCD8544_SPI.h" />
 		<Unit filename="PCD8544_SPI_FB.cpp" />
 		<Unit filename="Player.cpp" />
 		<Unit filename="Player.h" />
+		<Unit filename="SDCardManager.h" />
+		<Unit filename="SdFat/MinimumSerial.cpp" />
+		<Unit filename="SdFat/MinimumSerial.h" />
+		<Unit filename="SdFat/SdFat.h" />
+		<Unit filename="SdFat/SdFatBase.cpp" />
+		<Unit filename="SdFat/SdFatConfig.h" />
+		<Unit filename="SdFat/SdFatUtil.cpp" />
+		<Unit filename="SdFat/SdFatUtil.h" />
+		<Unit filename="SdFat/SdFatmainpage.h" />
+		<Unit filename="SdFat/SdInfo.h" />
+		<Unit filename="SdFat/SdSpi.h" />
+		<Unit filename="SdFat/SdSpiCard.cpp" />
+		<Unit filename="SdFat/SdSpiCard.h" />
+		<Unit filename="SdFat/SdVolume.h" />
+		<Unit filename="SdFat/utility/FatFile.cpp" />
+		<Unit filename="SdFat/utility/FatFile.h" />
+		<Unit filename="SdFat/utility/FatFileSFN.cpp" />
+		<Unit filename="SdFat/utility/FatFileSystem.h" />
+		<Unit filename="SdFat/utility/FatVolume.cpp" />
+		<Unit filename="SdFat/utility/FatVolume.h" />
 		<Unit filename="TinyFantasy.ino">
 			<Option compile="1" />
 			<Option link="1" />
