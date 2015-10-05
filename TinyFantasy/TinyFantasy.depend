@@ -88,3 +88,246 @@
 1362986950 d:\arduino\codeblocks\arduino\hardware\arduino\variants\eightanaloginputs\pins_arduino.h
 	"../standard/pins_arduino.h"
 
+1443139710 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\effects.cpp
+	"Effects.h"
+
+1443139708 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\effects.h
+	"PCD8544_SPI.h"
+
+1442803798 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\pcd8544_spi.h
+	"Arduino.h"
+
+1444010373 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\input.cpp
+	"Input.h"
+	<Arduino.h>
+
+1444012707 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\input.h
+
+1444020703 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\mapmanager.cpp
+	"MapManager.h"
+	"SDCardManager.h"
+
+1443140119 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\mapmanager.h
+	"PCD8544_SPI.h"
+
+1444020703 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\menu.cpp
+	"Menu.h"
+	"Input.h"
+	"SDCardManager.h"
+
+1444012359 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\menu.h
+	"PCD8544_SPI.h"
+
+1442724688 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\pcd8544_spi_fb.cpp
+	"PCD8544_SPI.h"
+	<SPI.h>
+
+1444020703 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\player.cpp
+	"Player.h"
+	"SDCardManager.h"
+
+1444012684 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\player.h
+	"PCD8544_SPI.h"
+
+1444020734 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\tinyfantasy.ino
+	<Arduino.h>
+	<SPI.h>
+	"SDCardManager.h"
+	"PCD8544_SPI.h"
+	"Effects.h"
+	"Player.h"
+	"MapManager.h"
+	"Input.h"
+	"Menu.h"
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\minimumserial.cpp
+	<Arduino.h>
+	"MinimumSerial.h"
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\minimumserial.h
+	<Arduino.h>
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\sdfatbase.cpp
+	"SdFat.h"
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\sdfat.h
+	"SdSpiCard.h"
+	"utility/FatLib.h"
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\sdspicard.h
+	<Arduino.h>
+	<SdFatConfig.h>
+	<SdInfo.h>
+	<SdSpi.h>
+
+1444021554 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\sdfatconfig.h
+	<stdint.h>
+	<avr/io.h>
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\sdinfo.h
+	<stdint.h>
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\sdspi.h
+	<Arduino.h>
+	"SdFatConfig.h"
+	<SPI.h>
+	"utility/SoftSPI.h"
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\softspi.h
+	"DigitalPin.h"
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\digitalpin.h
+	<Arduino.h>
+	<avr/io.h>
+	<util/atomic.h>
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fatlib.h
+	"ArduinoFiles.h"
+	"ArduinoStream.h"
+	"FatFileSystem.h"
+	"FatLibConfig.h"
+	"FatVolume.h"
+	"FatFile.h"
+	"StdioStream.h"
+	"fstream.h"
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\arduinofiles.h
+	"FatLibConfig.h"
+	"FatFile.h"
+	<limits.h>
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fatlibconfig.h
+	<stdint.h>
+	"../SdFatConfig.h"
+	<avr/io.h>
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fatfile.h
+	<string.h>
+	<stddef.h>
+	<limits.h>
+	"FatLibConfig.h"
+	"FatApiConstants.h"
+	"FatStructs.h"
+	"FatVolume.h"
+	<avr/pgmspace.h>
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fatapiconstants.h
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fatstructs.h
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fatvolume.h
+	<stddef.h>
+	"FatLibConfig.h"
+	"FatStructs.h"
+	<Arduino.h>
+	<Arduino.h>
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\arduinostream.h
+	"FatLibConfig.h"
+	<Arduino.h>
+	"bufstream.h"
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\bufstream.h
+	<string.h>
+	"iostream.h"
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\iostream.h
+	"istream.h"
+	"ostream.h"
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\istream.h
+	"ios.h"
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\ios.h
+	"FatFile.h"
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\ostream.h
+	"ios.h"
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fatfilesystem.h
+	"FatVolume.h"
+	"FatFile.h"
+	"ArduinoFiles.h"
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\stdiostream.h
+	<limits.h>
+	"FatFile.h"
+	<stdio.h>
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fstream.h
+	"FatFile.h"
+	"iostream.h"
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\sdfatutil.cpp
+	<stdlib.h>
+	"SdFat.h"
+	"SdFatUtil.h"
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\sdfatutil.h
+	"SdFat.h"
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\sdspicard.cpp
+	"SdSpiCard.h"
+	"SdSpi.h"
+	<SPI.h>
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\sdspisam3x.cpp
+	"SdSpi.h"
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\sdspistm32f1.cpp
+	"SdSpi.h"
+	<SPI.h>
+	<libmaple/dma.h>
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\sdspiteensy3.cpp
+	"SdSpi.h"
+	"kinetis.h"
+	"SPI.h"
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fatfile.cpp
+	"FatFile.h"
+	"FatFileSystem.h"
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fatfilelfn.cpp
+	"FatFile.h"
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fatfileprint.cpp
+	<math.h>
+	"FatFile.h"
+	"FmtNumber.h"
+
+1427199962 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fmtnumber.h
+	<math.h>
+	<stdint.h>
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fatfilesfn.cpp
+	"FatFile.h"
+	"FatFileSystem.h"
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fatvolume.cpp
+	<string.h>
+	"FatVolume.h"
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fmtnumber.cpp
+	"FmtNumber.h"
+	<avr/pgmspace.h>
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\fstream.cpp
+	"fstream.h"
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\istream.cpp
+	<float.h>
+	<ctype.h>
+	"istream.h"
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\ostream.cpp
+	<string.h>
+	"ostream.h"
+
+1427199962 source:d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdfat\utility\stdiostream.cpp
+	"StdioStream.h"
+	"FmtNumber.h"
+
+1444020722 d:\desenvolvimento\arduino\tinyfantasy\tinyfantasy\sdcardmanager.h
+	<SdFat.h>
+

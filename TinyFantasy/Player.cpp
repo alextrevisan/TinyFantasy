@@ -1,5 +1,5 @@
 #include "Player.h"
-#include <SD.h>
+#include "SDCardManager.h"
 
 Player::Player(PCD8544_SPI_FB& lcd)
 :LCD(lcd)
@@ -17,13 +17,13 @@ void Player::drawPlayer(int x, int y, char dir)
     char pfile[17];
     sprintf(pfile,"player/p%c.bin",dir);
     //Player sprite, print only when black
-    File player = SD.open(pfile);
-    if(!player) return;
+    File menu = SD.open(pfile);
+    if(!menu) return;
     int cur_x = x;
     int cur_y = y;
     for(int i = 0; i < 32; ++i)
     {
-        int sprite = player.read();
+        int sprite = menu.read();
         for(int yy = 0; yy < 8; ++yy)
         {
             if(bitRead(sprite, yy))
@@ -38,16 +38,16 @@ void Player::drawPlayer(int x, int y, char dir)
             cur_y+=8;
         }
     }
-    player.close();
+    menu.close();
     sprintf(pfile,"player/p%c_in.bin",dir);
     //Player internal sprite, print to remove ghost effect from sprite
-    player = SD.open(pfile);
-    if(!player) return;
+    menu = SD.open(pfile);
+    if(!menu) return;
     cur_x = x;
     cur_y = y;
     for(int i = 0; i < 32; ++i)
     {
-        int sprite = player.read();
+        int sprite = menu.read();
         for(int yy = 0; yy < 8; ++yy)
         {
             if(bitRead(sprite, yy))
@@ -62,10 +62,10 @@ void Player::drawPlayer(int x, int y, char dir)
             cur_y+=8;
         }
     }
-    player.close();
+    menu.close();
 }
 
-void Player::move(PlayerDirection p)
+void Player::move(KEYS p)
 {
     switch(p)
     {

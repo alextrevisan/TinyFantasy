@@ -2,12 +2,13 @@
 #define PLAYER_H
 
 #include "PCD8544_SPI.h"
-enum PlayerDirection
+enum KEYS
 {
-    UP,
-    DOWN,
-    LEFT,
-    RIGHT
+    UP = 0,
+    DOWN = 1,
+    LEFT = 2,
+    RIGHT = 3,
+    USE = 4
 };
 class Player
 {
@@ -15,7 +16,7 @@ class Player
         Player(PCD8544_SPI_FB& lcd);
         virtual ~Player();
         void drawPlayer(int x, int y, char dir);
-        void move(PlayerDirection p);
+        void move(KEYS p);
     protected:
     private:
         PCD8544_SPI_FB& LCD;

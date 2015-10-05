@@ -1,5 +1,5 @@
 #include "MapManager.h"
-#include <SD.h>
+#include "SDCardManager.h"
 
 MapManager::MapManager(PCD8544_SPI_FB& lcd)
 :LCD(lcd), raining(false)

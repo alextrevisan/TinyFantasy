@@ -1,23 +1,28 @@
 #include <Arduino.h>
 #include <SPI.h>
-#include <SD.h>
+#include "SDCardManager.h"
 #include "PCD8544_SPI.h"
 #include "Effects.h"
 #include "Player.h"
 #include "MapManager.h"
+#include "Input.h"
+#include "Menu.h"
 
+SdFat SD;
 PCD8544_SPI_FB lcd;
+
+Menu menu(lcd);
 Effects effects(lcd);
 MapManager mapManager(lcd);
 Player player(lcd);
 
 void printStart()
 {
-    File player = SD.open("splash/tiny.bin");
-    if(player)
+    File menu = SD.open("splash/tiny.bin");
+    if(menu)
     {
-        player.readBytes((char*)&lcd.m_Buffer, 504);
-        player.close();
+        menu.readBytes((char*)&lcd.m_Buffer, 504);
+        menu.close();
     }
     else
     {
@@ -46,6 +51,8 @@ void setup()
     pinMode(7,INPUT_PULLUP);//LEFT
     pinMode(3,INPUT_PULLUP);//RIGHT
 
+    pinMode(2,INPUT_PULLUP);//USE
+
     //Splash screen
     printStart();
 }
@@ -58,38 +65,46 @@ char playerdir = 'd';
 
 void loop()
 {
-    if(digitalRead(5)==LOW)
+    Input::readKeys();
+    if(menu.onMenu())
     {
-        playerdir='u';
-        y--;
+        menu.drawMenu();
     }
-    if(digitalRead(6)==LOW)
+    else
     {
-        playerdir='d';
-        y++;
-    }
-    if(digitalRead(7)==LOW)
-    {
-        playerdir='l';
-        x--;
-    }
-    if(digitalRead(3)==LOW)
-    {
-        playerdir='r';
-        x++;
-    }
+        if(Input::isKeyDown(Input::UP))
+        {
+            playerdir='u';
+            y--;
+        }
+        if(Input::isKeyDown(Input::DOWN))
+        {
+            playerdir='d';
+            y++;
+        }
+        if(Input::isKeyDown(Input::LEFT))
+        {
+            playerdir='l';
+            x--;
+        }
+        if(Input::isKeyDown(Input::RIGHT))
+        {
+            playerdir='r';
+            x++;
+        }
 
-    //Current map limits
-    if(y<0)y=0;
-    if(y>80)y=80;
-    if(x<0)x=0;
-    if(x>112)x=112;
+        //Current map limits
+        if(y<0)y=0;
+        if(y>80)y=80;
+        if(x<0)x=0;
+        if(x>112)x=112;
 
-    mapManager.drawMap(x,y);
-    player.drawPlayer(x-(floor(x/64)*64),y-(floor(y/48)*48), playerdir);
+        mapManager.drawMap(x,y);
+        player.drawPlayer(x-(floor(x/64)*64),y-(floor(y/48)*48), playerdir);
 
-    effects.setRaining(mapManager.isRaining());
-    effects.drawEffects();
+        effects.setRaining(mapManager.isRaining());
+        effects.drawEffects();
+    }
 
     /*lcd.print("x:");
     lcd.print(x);
