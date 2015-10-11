@@ -35,3 +35,10 @@ bool Input::isKeyDown(int key)
 {
     return keyDown[key];
 }
+
+void Input::waitKeyDown(int key)
+{
+    while(!keyDown[key])
+        readKeys();
+}
+

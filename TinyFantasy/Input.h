@@ -14,6 +14,7 @@ class Input
         };
         static void readKeys();
         static bool isKeyDown(int key);
+        static void waitKeyDown(int key);
     protected:
     private:
         static bool keyDown[5];

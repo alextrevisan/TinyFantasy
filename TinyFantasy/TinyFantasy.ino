@@ -62,11 +62,12 @@ int x = 34;
 int y = 20;
 //Player start direction
 char playerdir = 'd';
+bool lastRainStatus = false;
 
 void loop()
 {
     Input::readKeys();
-    if(menu.onMenu())
+    if(menu.onMenu()!=NO_MENU)
     {
         menu.drawMenu();
     }
@@ -102,6 +103,11 @@ void loop()
         mapManager.drawMap(x,y);
         player.drawPlayer(x-(floor(x/64)*64),y-(floor(y/48)*48), playerdir);
 
+        if(lastRainStatus!=mapManager.isRaining() && lastRainStatus == false)
+        {
+            lastRainStatus = mapManager.isRaining();
+            menu.setMenu(RAINING);
+        }
         effects.setRaining(mapManager.isRaining());
         effects.drawEffects();
     }
